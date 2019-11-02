@@ -1,9 +1,9 @@
 import React from "react";
 import { Deck, Slide, Text, Appear } from "spectacle";
-import { Column } from "../components/grid/column";
-import { Row } from "../components/grid/row";
-import { TypeScriptIcon } from "../components/icons/typescript";
-import { theme } from "../theme";
+import { Column } from "components/grid/column";
+import { Row } from "components/grid/row";
+import { TypeScriptIcon } from "components/icons/typescript";
+import { theme } from "theme";
 
 export const Presentation = () => (
   <Deck controls={false} theme={theme}>
