@@ -8,8 +8,12 @@ const colors = {
 };
 
 const fonts = {
-  primary: "monospace",
-  secondary: "monospace",
+  primary: {
+    name: "Gloria Hallelujah",
+    googleFont: true,
+    styles: ["400", "700"],
+  },
+  secondary: "cursive",
   tertiary: "monospace",
 };
 

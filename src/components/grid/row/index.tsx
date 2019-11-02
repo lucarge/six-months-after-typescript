@@ -1,6 +1,7 @@
+import React, { CSSProperties, forwardRef, ReactNode } from "react";
 import styled from "styled-components";
 
-export const Row = styled("div")`
+const StyledRow = styled("div")`
   display: flex;
 
   align-items: stretch;
@@ -14,3 +15,13 @@ export const Row = styled("div")`
   min-height: 0;
   min-width: 0;
 `;
+
+type Props = CSSProperties & {
+  children: ReactNode;
+};
+
+export const Row = forwardRef<HTMLDivElement, Props>(({ children, ...rest }, ref) => (
+  <StyledRow ref={ref} style={rest}>
+    {children}
+  </StyledRow>
+));
