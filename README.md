@@ -1,3 +1,5 @@
+![ci report](https://github.com/lucarge/six-months-after-typescript/workflows/ci/badge.svg)
+
 <p align="center">
   <img src="./typescript.svg">
 </p>

@@ -1,0 +1,30 @@
+name: ci
+
+on:
+  pull_request:
+    branches:
+      - master
+  push:
+    branches:
+      - master
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Install Node.js 10.15.3
+        uses: actions/setup-node@master
+        with:
+          node-version: 10.15.3
+      - name: Install dependencies
+        run: yarn
+        env:
+          CI: true
+      - name: build
+        run: yarn build
+        env:
+          CI: true
+      - name: Test
+        run: yarn test --passWithNoTests
+        env:
+          CI: true
