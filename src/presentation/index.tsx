@@ -2,6 +2,8 @@ import React from "react";
 import { S10 } from "slides/S10";
 import { S11 } from "slides/S11";
 import { S12 } from "slides/S12";
+import { S13 } from "slides/S13";
+import { S20 } from "slides/S20";
 import { Deck, Slide } from "spectacle";
 import styled from "styled-components";
 import { theme } from "theme";
@@ -32,5 +34,11 @@ export const Presentation = () => (
     <SplitSlide bgColor="secondary">
       <S12 />
     </SplitSlide>
+    <Slide bgColor="secondary">
+      <S13 />
+    </Slide>
+    <Slide>
+      <S20 />
+    </Slide>
   </Deck>
 );
