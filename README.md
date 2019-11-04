@@ -140,7 +140,7 @@ After you experience this level of DX, the first reaction is: _I want this every
 You can write the types of every possible input by hand, but then you'll be getting a better DX with the same, unsafe runtime.
 You can write the types _and_ the validators by hand, but then you'll feel bored to write the same concept twice.
 
-Once again, I saw an opportunity window: adding a new tool to our arsenal: `io-ts` (thanks for the lib Giulio, by the way).
+Once again, I saw an opportunity window for adding a new tool to our arsenal: `io-ts` (thanks for the lib Giulio, by the way).
 
 If you're not familiar with it already, I recommend checking it out on [Github](https://github.com/gcanti/io-ts).
 
