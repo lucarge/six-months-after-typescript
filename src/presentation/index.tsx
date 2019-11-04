@@ -4,9 +4,13 @@ import { S11 } from "slides/S11";
 import { S12 } from "slides/S12";
 import { S13 } from "slides/S13";
 import { S20 } from "slides/S20";
+import { S21 } from "slides/S21";
+import { S30 } from "slides/S30";
+import { S31 } from "slides/S31";
 import { Deck, Slide } from "spectacle";
 import styled from "styled-components";
 import { theme } from "theme";
+import fogOfWar from "./fog_of_war.png";
 
 const SplitSlide = styled(Slide)`
   bottom: 0;
@@ -39,6 +43,15 @@ export const Presentation = () => (
     </Slide>
     <Slide>
       <S20 />
+    </Slide>
+    <Slide>
+      <S21 />
+    </Slide>
+    <Slide>
+      <S30 />
+    </Slide>
+    <Slide bgDarken={0.7} bgImage={fogOfWar}>
+      <S31 />
     </Slide>
   </Deck>
 );
