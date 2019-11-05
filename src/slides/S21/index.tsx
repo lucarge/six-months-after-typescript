@@ -9,7 +9,7 @@ import { Appear, Text } from "spectacle";
 
 export const S21 = () => (
   <Column>
-    <Row alignItems="center" flexGrow={0} justifyContent="space-evenly" paddingBottom={96}>
+    <Row alignItems="center" flexGrow={0} justifyContent="space-around" paddingBottom={96}>
       <Column alignItems="center" paddingRight={24}>
         <GoogleChromeIcon color="#fff" height="96px" width="96px" />
         <Column paddingTop={12}>

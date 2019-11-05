@@ -4,7 +4,7 @@ import { Appear, Image, Text } from "spectacle";
 import tokei from "./tokei.png";
 
 export const S20 = () => (
-  <>
+  <Column alignItems="flex-start">
     <Text textColor="secondary" textFont="tertiary" textSize="48px">
       useContext(ProntoPro)
     </Text>
@@ -14,5 +14,5 @@ export const S20 = () => (
         <Image src={tokei} />
       </Column>
     </Appear>
-  </>
+  </Column>
 );
