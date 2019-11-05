@@ -7,10 +7,18 @@ import { S20 } from "slides/S20";
 import { S21 } from "slides/S21";
 import { S30 } from "slides/S30";
 import { S31 } from "slides/S31";
+import { S32 } from "slides/S32";
+import { S33 } from "slides/S33";
+import { S40 } from "slides/S40";
+import { S41 } from "slides/S41";
+import { S42 } from "slides/S42";
+import { S43 } from "slides/S43";
 import { Deck, Slide } from "spectacle";
 import styled from "styled-components";
 import { theme } from "theme";
+import breakingChanges from "./breaking_changes.jpg";
 import fogOfWar from "./fog_of_war.png";
+import introducingTypescript from "./introducing_typescript.png";
 
 const SplitSlide = styled(Slide)`
   bottom: 0;
@@ -52,6 +60,24 @@ export const Presentation = () => (
     </Slide>
     <Slide bgDarken={0.7} bgImage={fogOfWar}>
       <S31 />
+    </Slide>
+    <Slide bgDarken={0.7} bgImage={breakingChanges}>
+      <S32 />
+    </Slide>
+    <Slide>
+      <S33 />
+    </Slide>
+    <Slide>
+      <S40 />
+    </Slide>
+    <Slide bgColor="secondary">
+      <S41 />
+    </Slide>
+    <SplitSlide bgColor="secondary">
+      <S42 />
+    </SplitSlide>
+    <Slide bgColor="secondary" bgImage={introducingTypescript}>
+      <S43 />
     </Slide>
   </Deck>
 );
