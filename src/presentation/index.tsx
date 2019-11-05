@@ -15,6 +15,8 @@ import { S42 } from "slides/S42";
 import { S43 } from "slides/S43";
 import { S50 } from "slides/S50";
 import { S51 } from "slides/S51";
+import { S52 } from "slides/S52";
+import { S53 } from "slides/S53";
 import { S60 } from "slides/S60";
 import { Deck, Slide } from "spectacle";
 import styled from "styled-components";
@@ -87,6 +89,12 @@ export const Presentation = () => (
     </Slide>
     <Slide bgColor="secondary">
       <S51 />
+    </Slide>
+    <Slide bgColor="secondary">
+      <S52 />
+    </Slide>
+    <Slide bgColor="secondary">
+      <S53 />
     </Slide>
     <Slide>
       <S60 />
