@@ -13,6 +13,9 @@ import { S40 } from "slides/S40";
 import { S41 } from "slides/S41";
 import { S42 } from "slides/S42";
 import { S43 } from "slides/S43";
+import { S50 } from "slides/S50";
+import { S51 } from "slides/S51";
+import { S60 } from "slides/S60";
 import { Deck, Slide } from "spectacle";
 import styled from "styled-components";
 import { theme } from "theme";
@@ -78,6 +81,15 @@ export const Presentation = () => (
     </SplitSlide>
     <Slide bgColor="secondary" bgImage={introducingTypescript}>
       <S43 />
+    </Slide>
+    <Slide>
+      <S50 />
+    </Slide>
+    <Slide bgColor="secondary">
+      <S51 />
+    </Slide>
+    <Slide>
+      <S60 />
     </Slide>
   </Deck>
 );
