@@ -5,7 +5,14 @@ import { StackOverflowIcon } from "components/icons/stackoverflow";
 import { TwitterIcon } from "components/icons/twitter";
 import React from "react";
 import { Appear, Image, Text } from "spectacle";
+import styled from "styled-components";
 import tech01 from "./tech01.png";
+
+const ImageHighlighted = styled(Image)`
+  border-radius: 8px;
+  box-shadow: 0 18px 38px rgba(255, 255, 255, 0.08), 0 35px 65px rgba(255, 255, 255, 0.08),
+    0 0 2px 0 rgba(255, 255, 255, 0.1);
+`;
 
 export const S12 = () => (
   <Row>
@@ -65,7 +72,7 @@ export const S12 = () => (
     <Appear>
       <Column backgroundColor="#007ACC" flexBasis={0} flexGrow={1} justifyContent="center">
         <Column padding="16px">
-          <Image src={tech01} />
+          <ImageHighlighted src={tech01} />
         </Column>
 
         <Text caps textColor="secondary">
