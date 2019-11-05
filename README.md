@@ -58,7 +58,7 @@ If you're familiar with strategic games, you know the feeling of being into a bi
 You know that the world your character is into is bigger than what you're seeing, but to know what's happening in another place of the map you need to reach that place first.
 
 In a similar way, we started experiencing the same feeling inside our codebase at the beginning of this year.
-The codebase was too big to fit all in my brain and to keep DRYness at an acceptable level we needed to dig through implementations more often than not, just to remember how something we developed a year ago worked.
+The codebase was too big to fit all in our brain and to keep DRYness at an acceptable level we needed to dig through implementations more often than not, just to remember how something we developed a year ago worked.
 
 We were using prop-types to define contracts between components, but they suffer two problems:
 
