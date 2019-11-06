@@ -32,7 +32,7 @@ export const S42 = () => {
 
       <Anim
         easing="back"
-        fromStyle={{ display: "none " }}
+        fromStyle={{ display: "none" }}
         onAnim={handleAnim}
         toStyle={[{ display: "none" }]}
         transitionDuration={0}

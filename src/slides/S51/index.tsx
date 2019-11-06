@@ -11,7 +11,15 @@ export const S51 = () => (
     </Column>
 
     <Heading size={2} textColor="primary">
-      Secure your core dependencies
+      Core dependencies
     </Heading>
+
+    <Column paddingTop={48}>
+      <Heading>
+        <span aria-label="link" role="img">
+          🔗
+        </span>
+      </Heading>
+    </Column>
   </>
 );
