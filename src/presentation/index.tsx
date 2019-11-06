@@ -17,7 +17,13 @@ import { S50 } from "slides/S50";
 import { S51 } from "slides/S51";
 import { S52 } from "slides/S52";
 import { S53 } from "slides/S53";
+import { S54 } from "slides/S54";
+import { S55 } from "slides/S55";
+import { S56 } from "slides/S56";
+import { S57 } from "slides/S57";
+import { S58 } from "slides/S58";
 import { S60 } from "slides/S60";
+import { S61 } from "slides/S61";
 import { Deck, Slide } from "spectacle";
 import styled from "styled-components";
 import { theme } from "theme";
@@ -96,8 +102,26 @@ export const Presentation = () => (
     <Slide bgColor="secondary">
       <S53 />
     </Slide>
+    <Slide bgColor="secondary">
+      <S54 />
+    </Slide>
+    <Slide bgColor="secondary">
+      <S55 />
+    </Slide>
+    <Slide bgColor="secondary">
+      <S56 />
+    </Slide>
+    <Slide>
+      <S57 />
+    </Slide>
+    <Slide bgColor="secondary">
+      <S58 />
+    </Slide>
     <Slide>
       <S60 />
+    </Slide>
+    <Slide>
+      <S61 />
     </Slide>
   </Deck>
 );

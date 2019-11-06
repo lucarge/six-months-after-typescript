@@ -17,11 +17,13 @@ const StyledRow = styled("div")`
 `;
 
 type Props = CSSProperties & {
-  children: ReactNode;
+  children?: ReactNode;
+  className?: string;
+  style?: CSSProperties;
 };
 
-export const Row = forwardRef<HTMLDivElement, Props>(({ children, ...rest }, ref) => (
-  <StyledRow ref={ref} style={rest}>
+export const Row = forwardRef<HTMLDivElement, Props>(({ children = null, className, style, ...rest }, ref) => (
+  <StyledRow className={className} ref={ref} style={{ ...style, ...rest }}>
     {children}
   </StyledRow>
 ));
