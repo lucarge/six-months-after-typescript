@@ -1,7 +1,6 @@
 import { Column } from "components/grid/column";
 import React, { ReactNode } from "react";
-import { Appear, Heading, Image, Text } from "spectacle";
-import ram from "./ram.jpg";
+import { Heading, Text } from "spectacle";
 
 type Props = {
   children: ReactNode;
@@ -23,24 +22,18 @@ const TypeScriptToken = ({ children }: Props) => (
   </Column>
 );
 
-export const S71 = () => (
-  <Column>
+export const S73 = () => (
+  <Column height={700} justifyContent="center" position="relative">
     <Column paddingBottom="5.22rem">
-      <TypeScriptToken>Lesson #1</TypeScriptToken>
+      <TypeScriptToken>Lesson #3</TypeScriptToken>
     </Column>
 
     <Text textColor="primary" textFont="tertiary">
-      Design for
+      Embrace the tool
     </Text>
 
     <Heading size={3} textColor="primary">
-      efficiency
+      capabilities
     </Heading>
-
-    <Appear>
-      <Column alignItems="center" justifyContent="center" paddingTop="5.22rem">
-        <Image src={ram} />
-      </Column>
-    </Appear>
   </Column>
 );

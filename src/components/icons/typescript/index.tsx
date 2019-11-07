@@ -6,7 +6,7 @@ type Props = {
   width: string;
 };
 
-export const TypeScriptIcon = ({ color = "#fff", height, width }: Props) => (
+export const TypeScriptIcon = ({ color = "#007ACC", height, width }: Props) => (
   <svg height={height} role="img" viewBox="0 0 24 24" width={width} xmlns="http://www.w3.org/2000/svg">
     <title>TypeScript icon</title>
     <path

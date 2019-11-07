@@ -26,7 +26,7 @@ export const S42 = () => {
 
       <Appear>
         <Column alignItems="center" backgroundColor="#007ACC" flexBasis="0" flexGrow={1} justifyContent="center">
-          <TypeScriptIcon height="20vw" width="20vw" />
+          <TypeScriptIcon color="#FFFFFF" height="20vw" width="20vw" />
         </Column>
       </Appear>
 

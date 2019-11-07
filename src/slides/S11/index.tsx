@@ -12,7 +12,7 @@ export const S11 = () => (
       </Text>
 
       <Column paddingLeft={20}>
-        <TypeScriptIcon height="48px" width="48px" />
+        <TypeScriptIcon color="#FFFFFF" height="48px" width="48px" />
       </Column>
     </Row>
 
