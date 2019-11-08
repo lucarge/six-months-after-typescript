@@ -159,7 +159,7 @@ Combining the typechecker and the boundary-checks together, we have been able to
 
 ## Provide a swiss-knife to work with types
 
-Types are not that helpful if you're not able to manipulate them properly. TypeScript provides loads of helper types to deal with them (`NonNullable`, `ReturnType`, `Arguments`, `Partial` and so on), but for our custom types we needed to build them by ourself.
+Types are not that helpful if you're not able to manipulate them properly. TypeScript provides loads of helper types to deal with them (`NonNullable`, `ReturnType`, `Parameters`, `Partial` and so on), but for our custom types we needed to build them by ourself.
 
 That why we introduced `MapExtractor`, `ListExtractor`, `MapKey`, `PromisedReturnType` as soon as possible in our codebase: avoiding types duplication is the key for a better developer experience.
 

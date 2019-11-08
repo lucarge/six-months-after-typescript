@@ -35,7 +35,7 @@ export const S57 = () => (
     <Row flexWrap="wrap">
       <HelperType autoAppear>NonNullable</HelperType>
       <HelperType>ReturnType</HelperType>
-      <HelperType>Arguments</HelperType>
+      <HelperType>Parameters</HelperType>
       <HelperType>Partial</HelperType>
       <HelperType>Readonly</HelperType>
       <HelperType>keyof</HelperType>
