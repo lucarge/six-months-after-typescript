@@ -17,7 +17,7 @@ export const S33 = () => (
     </Appear>
 
     <Appear>
-      <Text textColor="secondary">Have better contracts</Text>
+      <Text textColor="secondary">Define better contracts</Text>
     </Appear>
   </>
 );

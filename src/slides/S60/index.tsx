@@ -9,7 +9,7 @@ export const S60 = () => (
     </Column>
 
     <Heading caps size={1}>
-      delivered
+      deliver
     </Heading>
 
     <Column paddingTop={48}>

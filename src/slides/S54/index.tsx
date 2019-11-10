@@ -11,7 +11,7 @@ export const S54 = () => (
     </Column>
 
     <Heading size={2} textColor="primary">
-      Application boundary
+      Application boundaries
     </Heading>
 
     <Column paddingTop={48}>
