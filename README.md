@@ -12,7 +12,7 @@
 
 [See it online](https://six-months-after-typescript.lucarge.now.sh/)
 
-This repository contains the presentation where I analyzed how the introduction of TypeScript in [ProntoPro](https://www.prontopro.it) impacted the Engineering team.
+This repository contains a presentation in which I talk about how TypeScript impacted the [ProntoPro](https://www.prontopro.it) Engineering team.
 
 Transcript available below.
 
@@ -45,15 +45,15 @@ From there we package four separate applications:
 
 We leverage code sharing **a lot**. I won't go deep into details on how we're doing this: if you're interested in the topic, I gave a talk about it a couple of months ago, and you can find the slides here: https://write-once-run-everywhere.lucarge.now.sh/.
 
-Why am I saying this? Because when I say that our repo counts 150.000 lines of code, that doesn't mean that we implemented the same product three times. That means, instead, that the product complexity can fit those lines of code at the moment, and then those lines are transformed to target different platforms.
+Why am I saying this? Because when I say that our repo counts circa 180.000 lines of code, that doesn't mean that we implemented the same product three times. That means, instead, that the product complexity can fit those lines of code at the moment, and then those lines are transformed to target different platforms.
 
 And we'll soon see why this is an important concept.
 
-# Let's talk problems
+# Let's talk about problems
 
 When dealing with such a massive codebase, two problems arise.
 
-The first one can be described as **Fog of War**, borrowing the term from a fantastic talk Gabriele Petronella gave at Codemotion Rome last year.
+The first one can be described as **Fog of War**, borrowing the term from a fantastic talk Gabriele Petronella gave at Codemotion Rome 2019.
 If you're familiar with strategic games, you know the feeling of being into a big map, of which only a small part is visible to you at a given time.
 You know that the world your character is into is bigger than what you're seeing, but to know what's happening in another place of the map you need to reach that place first.
 
@@ -69,7 +69,7 @@ We were using prop-types to define contracts between components, but they suffer
 
 _Can you tell me what information my function will receive as input?_ Nope.
 
-_Can you tell me if this function can do asyncronous work?_ Nope.
+_Can you tell me if this function can do asynchronous work?_ Nope.
 
 _Will my output be consumed by someone else? Should I give them back something in particular?_ Dunno, sorry 🤷‍♂️
 
@@ -102,11 +102,11 @@ Than two things happened:
 
 In the end, during our team trip to Bruxelles to attend the Fosdem, we finally introduced TypeScript support inside our codebase: from there, it was just a matter of transitioning the team to this new, and unfamiliar to some, technology.
 
-# How to transition the team to a world of strongly-typed code
+# How we transitioned the team to a world of strongly-typed code
 
 Thanks to the work that Babel maintainers and the TypeScript team did to better integrate the two tools, introducing TypeScript support in our codebase has been _the easy part_, so to speak. Convincing the team that the transition was worth it, though, was a different story; if you don't see the value of a compiler yelling at you because your code has flaws, you'll probably be frustrated and you'll stick to JavaScript.
 
-## Secure your core technologies first
+## We secured our core technologies
 
 The first thing we did was a team hacking session dedicated to enhance Immutable.js types. I don't mean that the typings that ship with the library are wrong or bad, but for our use cases we wanted something more. Also, I exploited this need to reach two side goals:
 
@@ -133,7 +133,7 @@ const Map = <T>(payload: T) => ({
 When you use the second one and you get IDE suggestions while inside the `.get`, with the types of the relative properties alongside the suggestions, the value of a typechecker is immediately clear to you, even if you never used one before.
 I still remember when this aha moment happened inside our team. It was a great feeling.
 
-## Secure your application boundaries second
+## We secured our application boundaries
 
 After you experience this level of DX, the first reaction is: _I want this everywhere_. However it doesn't take much to realise that, as soon as you interact with the outside world (an API, the localStorage, the values of a form, query params, whatever), all this goodness is lost.
 
@@ -152,18 +152,18 @@ Our current setup is made of three steps, that runs every time we get a new inpu
 
 We also built two custom reporters, so that if something is wrong with the input we know as soon as possible:
 
-- Console Reporter: runs in dev mode, and it's super useful to see why the input is wrong while developing. We developed it to benefit ourselfs first, but very soon our backenders started appreciating its capabilities, too.
+- Console Reporter: runs in dev mode, and it's super useful to see why the input is wrong while developing. We developed it to benefit ourselves first, but very soon our backenders started appreciating its capabilities, too.
 - Sentry Reporter: conceptually the same thing as the Console Reporter, but running in production and logging on Sentry. That allows us to collect all the reports while keeping the user's console clean.
 
 Combining the typechecker and the boundary-checks together, we have been able to validate changes less often in production, resulting in a performance boost for our end users. Win-Win.
 
-## Provide a swiss-knife to work with types
+## We provided a swiss-knife to work with types
 
 Types are not that helpful if you're not able to manipulate them properly. TypeScript provides loads of helper types to deal with them (`NonNullable`, `ReturnType`, `Parameters`, `Partial` and so on), but for our custom types we needed to build them by ourself.
 
 That why we introduced `MapExtractor`, `ListExtractor`, `MapKey`, `PromisedReturnType` as soon as possible in our codebase: avoiding types duplication is the key for a better developer experience.
 
-## Give the team members time to adapt
+## We gave the team time to adapt
 
 Last, but very important, we need to acknowledge that the leaning curve for becoming a fluent TypeScript developer is steep. It goes without saying that the team will not reach the same level of knowledge of the tooling and the language at the same time.
 
@@ -173,7 +173,7 @@ Finally, the thing I will be hated for: _if you can't get the compiler to unders
 
 Our brain can only deal with a certain level of complexity at a time; my experience is that most of the times trying to cross that limit is pointless and counter-productive. In the worst scenario, if the compiler is right we'll ship a bug and in a couple of days we'll be dealing with it with a fresh set of eyes. If the compiler is wrong, instead, we'll probably find a better way to communicate our intentions to it and in a couple of months we'll probably be able to remove that `any` with ease.
 
-# Did TypeScript delivered on its promises?
+# Did TypeScript deliver on its promises?
 
 The TypeScript tagline is _JavaScript that scales_. It took me a while to understand the meaning of it, probably because the only concept of _scaling_ I knew before was related to server autoscaling on AWS. But now I think I got it: it's not about runtime performances, it's about complexity and people.
 
@@ -190,9 +190,7 @@ In conclusion, I'd say that TypeScript delivered more than we expected.
 
 # What would we do differently if we were starting the transition today with the level of knowledge we gained so far?
 
-## Some lessons we learned on our skin
-
-### Design for efficiency
+## Design for efficiency
 
 While TypeScript makes large teams scale better, the underlying tooling doesn't scale as well.
 
@@ -202,7 +200,7 @@ While expressing the need for more powerful machines to the company, we soon rea
 
 If we started the transition to TS today, we would probably put much more focus to avoid this scenario.
 
-### Assign the right responsibilities
+## Assign the right responsibilities
 
 Another thing that I personally would do differently today is defining better boundaries for TS at an earlier stage. As I said before, we're using TypeScript to get answers related to code correctness as soon as possible. But the TS compiler is able to do a lot more than that: for example, it also does some code linting. When we started the TS migration we didn't set boundaries and went for the strictest configuration possible. The issue was that we already had `eslint` in codebase and having different tools yelling at you for the same reason is not _the perfect developer experience_, so to speak. On top of this, we also had `tslint` in the repo for a short period of time, which honestly gave us a bit too many feedbacks to digest.
 
@@ -215,7 +213,7 @@ Here's the way we set boundaries today, instead:
 - Does the code respect the team coding standards? => Eslint
 - Is the code formatted correctly? Prettier (in progress, not yet enabled by default)
 
-### On types vs interfaces
+## On types vs interfaces
 
 When we started migrating to TypeScript, we were coming from a world where an object created on the fly and an entity used across the whole codebase had no semantic difference: they were both objects.
 
