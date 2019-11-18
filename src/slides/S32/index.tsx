@@ -19,7 +19,7 @@ export const S32 = () => (
     <Appear>
       <Column paddingBottom={48}>
         <Text textColor="secondary">
-          <span aria-label="lightning" role="img" style={{ fontSize: "4rem" }}>
+          <span aria-label="backhand-index-finger-pointing-down" role="img" style={{ fontSize: "4rem" }}>
             👇
           </span>
         </Text>

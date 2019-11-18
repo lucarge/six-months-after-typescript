@@ -27,6 +27,7 @@ import { S55 } from "slides/S55";
 import { S56 } from "slides/S56";
 import { S57 } from "slides/S57";
 import { S58 } from "slides/S58";
+import { S59 } from "slides/S59";
 import { S60 } from "slides/S60";
 import { S61 } from "slides/S61";
 import { S62 } from "slides/S62";
@@ -147,6 +148,9 @@ export const Presentation = () => (
     </Slide>
     <Slide bgColor="secondary">
       <S58 />
+    </Slide>
+    <Slide>
+      <S59 />
     </Slide>
     <Slide>
       <S60 />
