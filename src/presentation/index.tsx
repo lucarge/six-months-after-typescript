@@ -9,6 +9,11 @@ import { S30 } from "slides/S30";
 import { S31 } from "slides/S31";
 import { S32 } from "slides/S32";
 import { S33 } from "slides/S33";
+import { S34 } from "slides/S34";
+import { S35 } from "slides/S35";
+import { S36 } from "slides/S36";
+import { S37 } from "slides/S37";
+import { S38 } from "slides/S38";
 import { S40 } from "slides/S40";
 import { S41 } from "slides/S41";
 import { S42 } from "slides/S42";
@@ -82,11 +87,26 @@ export const Presentation = () => (
     <Slide bgDarken={0.7} bgImage={fogOfWar}>
       <S31 />
     </Slide>
-    <Slide bgDarken={0.7} bgImage={breakingChanges}>
+    <Slide>
       <S32 />
     </Slide>
     <Slide>
       <S33 />
+    </Slide>
+    <Slide>
+      <S34 />
+    </Slide>
+    <Slide>
+      <S35 />
+    </Slide>
+    <Slide bgDarken={0.7} bgImage={breakingChanges}>
+      <S36 />
+    </Slide>
+    <Slide>
+      <S37 />
+    </Slide>
+    <Slide>
+      <S38 />
     </Slide>
     <Slide>
       <S40 />
