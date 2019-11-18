@@ -37,6 +37,7 @@ import { S71 } from "slides/S71";
 import { S72 } from "slides/S72";
 import { S73 } from "slides/S73";
 import { S74 } from "slides/S74";
+import { S75 } from "slides/S75";
 import { S80 } from "slides/S80";
 import { S90 } from "slides/S90";
 import { Deck, Slide } from "spectacle";
@@ -176,6 +177,9 @@ export const Presentation = () => (
     </Slide>
     <Slide bgColor="secondary">
       <S74 />
+    </Slide>
+    <Slide bgColor="secondary">
+      <S75 />
     </Slide>
     <Slide>
       <S80 />
