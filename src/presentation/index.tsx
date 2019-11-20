@@ -1,4 +1,5 @@
 import React from "react";
+import { S00 } from "slides/S00";
 import { S10 } from "slides/S10";
 import { S11 } from "slides/S11";
 import { S12 } from "slides/S12";
@@ -68,6 +69,9 @@ const SplitSlide = styled(Slide)`
 
 export const Presentation = () => (
   <Deck controls={false} theme={theme}>
+    <Slide bgColor="secondary">
+      <S00 />
+    </Slide>
     <Slide>
       <S10 />
     </Slide>
