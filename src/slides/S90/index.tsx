@@ -1,4 +1,5 @@
 import React from "react";
-import { Heading } from "spectacle";
+import { Image } from "spectacle";
+import thanks from "./thanks.gif";
 
-export const S90 = () => <Heading textColor="primary">Thank You!</Heading>;
+export const S90 = () => <Image src={thanks} />;

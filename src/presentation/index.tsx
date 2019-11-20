@@ -8,9 +8,11 @@ import { S21 } from "slides/S21";
 import { S30 } from "slides/S30";
 import { S31 } from "slides/S31";
 import { S32 } from "slides/S32";
+import { S32a } from "slides/S32a";
 import { S33 } from "slides/S33";
 import { S34 } from "slides/S34";
 import { S35 } from "slides/S35";
+import { S35a } from "slides/S35a";
 import { S36 } from "slides/S36";
 import { S37 } from "slides/S37";
 import { S38 } from "slides/S38";
@@ -28,6 +30,7 @@ import { S56 } from "slides/S56";
 import { S57 } from "slides/S57";
 import { S58 } from "slides/S58";
 import { S59 } from "slides/S59";
+import { S59a } from "slides/S59a";
 import { S60 } from "slides/S60";
 import { S61 } from "slides/S61";
 import { S62 } from "slides/S62";
@@ -93,6 +96,9 @@ export const Presentation = () => (
       <S32 />
     </Slide>
     <Slide>
+      <S32a />
+    </Slide>
+    <Slide>
       <S33 />
     </Slide>
     <Slide>
@@ -100,6 +106,9 @@ export const Presentation = () => (
     </Slide>
     <Slide>
       <S35 />
+    </Slide>
+    <Slide>
+      <S35a />
     </Slide>
     <Slide bgDarken={0.7} bgImage={breakingChanges}>
       <S36 />
@@ -151,6 +160,9 @@ export const Presentation = () => (
     </Slide>
     <Slide>
       <S59 />
+    </Slide>
+    <Slide>
+      <S59a />
     </Slide>
     <Slide>
       <S60 />
