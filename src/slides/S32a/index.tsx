@@ -1,10 +1,10 @@
 import { Column } from "components/grid/column";
 import React from "react";
 import { Image } from "spectacle";
-import thanks from "./thanks.gif";
+import confident from "./confident.gif";
 
-export const S90 = () => (
+export const S32a = () => (
   <Column paddingBottom={48}>
-    <Image src={thanks} />
+    <Image src={confident} />
   </Column>
 );
